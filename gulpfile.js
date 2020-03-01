@@ -20,10 +20,10 @@ gulp.task("server", function () {
         online: false
     });
 
-    gulp.watch("source/sass/**/*.css", gulp.series("css"));
-    gulp.watch("source/img/**/*.{jpg, png}", gulp.series("refresh"));
-    gulp.watch("source/**/*.html", gulp.series("refresh"));
-    gulp.watch("source/**/*.php", gulp.series("refresh"));
+    gulp.watch("scc/**/*.css", gulp.series("css"));
+    gulp.watch("img/**/*.{jpg, png}", gulp.series("refresh"));
+    gulp.watch("**/*.html", gulp.series("refresh"));
+    gulp.watch("**/*.php", gulp.series("refresh"));
 });
 
 gulp.task("refresh", function (done) {
